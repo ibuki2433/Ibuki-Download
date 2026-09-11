@@ -65,6 +65,12 @@ def format_duration(seconds):
 def index():
     return render_template("index.html")
 
+@app.route("/<google_file>.html")
+def google_verify(google_file):
+    if google_file.startswith("google"):
+        return f"google-site-verification: {google_file}.html"
+    return "Not Found", 404
+
 @app.route("/favicon.ico")
 @app.route("/app_icon.ico")
 def favicon():
