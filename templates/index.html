@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="th" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌸 Ibuki Download - ดาวน์โหลดวิดีโอฟรีทุกชนิด</title>
+    <link rel="icon" type="image/x-icon" href="/app_icon.ico">
+    
+    <!-- Google Fonts: Prompt -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Prompt', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fdf2f8',
+                            400: '#f472b6',
+                            500: '#ec4899',
+                            600: '#db2777',
+                            700: '#be185d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Prompt', sans-serif;
+            background: radial-gradient(circle at 50% -10%, #201735 0%, #0d0c18 100%);
+            min-height: 100vh;
+        }
+        .glass-card {
+            background: rgba(26, 24, 46, 0.85);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-input {
+            background: rgba(16, 15, 30, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+        .progress-glow {
+            box-shadow: 0 0 20px rgba(236, 72, 153, 0.5);
+        }
+        .ad-box {
+            background: rgba(19, 18, 36, 0.8);
+            border: 1px dashed rgba(244, 114, 182, 0.35);
+        }
+        .ad-box:hover {
+            border-color: rgba(244, 114, 182, 0.7);
+        }
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 0.25; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(1.05); }
+        }
+        .glow-orb {
+            animation: pulse-slow 7s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="text-slate-100 flex flex-col min-h-screen relative overflow-x-hidden">
+
+    <!-- Ambient Glow Orbs -->
+    <div class="glow-orb absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-pink-600/25 blur-[150px] rounded-full pointer-events-none -z-10"></div>
+    <div class="glow-orb absolute top-80 -left-40 w-[450px] h-[450px] bg-indigo-600/20 blur-[140px] rounded-full pointer-events-none -z-10"></div>
+    <div class="glow-orb absolute top-96 -right-40 w-[450px] h-[450px] bg-purple-600/20 blur-[140px] rounded-full pointer-events-none -z-10"></div>
+
+    <!-- Top Navigation Header -->
+    <header class="w-full border-b border-slate-800/80 bg-slate-950/40 backdrop-blur-md sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 py-3.5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="/app_icon.ico" alt="Ibuki Logo" class="w-10 h-10 rounded-xl shadow-md shadow-pink-500/20 object-contain">
+                <div>
+                    <h1 class="text-xl font-bold tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-pink-300 via-purple-200 to-indigo-300">
+                        🌸 Ibuki Download
+                    </h1>
+                    <p class="text-[11px] text-slate-400">เว็บดาวน์โหลดวิดีโอและเพลง ฟรีทุกชนิด</p>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-pink-500/10 border border-pink-500/25 text-xs text-pink-300">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    พร้อมใช้งาน 24 ชม.
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Top Responsive Ad Banner (Leaderboard 728x90 / 320x50) -->
+    <div class="w-full max-w-5xl mx-auto px-4 pt-4">
+        <!-- ⭐️ จุดวางโค้ดโฆษณาด้านบน (Top Ad) ⭐️ -->
+        <div class="ad-box rounded-2xl p-3 text-center transition">
+            <div class="flex items-center justify-between text-[10px] text-slate-400 mb-1.5 px-2">
+                <span><i class="fa-solid fa-rectangle-ad text-pink-400 mr-1"></i>พื้นที่โฆษณา (Sponsored)</span>
+                <span class="text-slate-500">728 x 90 Leaderboard</span>
+            </div>
+            <div class="h-20 sm:h-24 rounded-xl bg-gradient-to-r from-indigo-950/60 via-purple-900/40 to-pink-950/60 border border-purple-800/30 flex items-center justify-center gap-4 px-4 overflow-hidden relative group cursor-pointer">
+                <div class="w-12 h-12 rounded-xl bg-pink-500/20 flex items-center justify-center text-pink-400 text-2xl shrink-0">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <div class="text-left">
+                    <div class="text-sm sm:text-base font-bold text-white group-hover:text-pink-300 transition">
+                        โปรโมทโฆษณาของคุณตรงนี้!
+                    </div>
+                    <div class="text-xs text-slate-400 line-clamp-1">
+                        สามารถใส่แบนเนอร์สินค้า หรือโค้ด Google AdSense ได้อย่างง่ายดาย
+                    </div>
+                </div>
+                <div class="hidden md:flex ml-auto">
+                    <span class="px-4 py-2 rounded-xl bg-pink-600 text-white text-xs font-semibold shadow hover:bg-pink-500 transition">
+                        คลิกดูเลย
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3-Column Layout: Left Ad | Main Downloader | Right Ad -->
+    <div class="flex-1 w-full max-w-[1550px] mx-auto px-3 sm:px-6 py-6 flex items-start justify-center gap-6">
+
+        <!-- ==================================================== -->
+        <!-- ⭐️ 1. ป้ายโฆษณาฝั่งซ้าย (Left Sidebar Ad - Skyscraper) ⭐️ -->
+        <!-- ==================================================== -->
+        <aside class="hidden xl:block w-[180px] 2xl:w-[240px] shrink-0 sticky top-20 space-y-4">
+            <div class="ad-box rounded-3xl p-4 shadow-xl transition space-y-3">
+                <div class="flex items-center justify-between text-[11px] text-slate-400">
+                    <span><i class="fa-solid fa-bullhorn text-pink-400 mr-1"></i>โฆษณา</span>
+                    <span class="text-[10px] text-slate-500">300x600</span>
+                </div>
+
+                <!-- ป้ายโฆษณาตัวอย่าง (สามารถแทนที่ด้วยโค้ด AdSense ได้ทันที) -->
+                <div class="min-h-[500px] rounded-2xl bg-gradient-to-b from-purple-950/70 via-slate-900/80 to-pink-950/70 border border-pink-500/20 p-4 flex flex-col items-center justify-between text-center group cursor-pointer">
+                    <div class="space-y-2 pt-4">
+                        <div class="w-14 h-14 mx-auto rounded-2xl bg-gradient-to-tr from-pink-500 to-indigo-600 flex items-center justify-center text-white text-2xl shadow-lg shadow-pink-500/30">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <div class="text-sm font-bold text-white pt-2 group-hover:text-pink-300 transition">
+                            พื้นที่โฆษณาฝั่งซ้าย
+                        </div>
+                        <div class="text-xs text-slate-400 leading-relaxed">
+                            ติดป้ายแบนเนอร์โปรโมทสินค้าหรือรับเงินจาก AdSense
+                        </div>
+                    </div>
+
+                    <div class="w-full space-y-3 pb-4">
+                        <div class="p-3 rounded-xl bg-slate-950/60 border border-slate-800 text-[11px] text-slate-400">
+                            รองรับรูปภาพ GIF, HTML5 และสคริปต์โฆษณา
+                        </div>
+                        <button class="w-full py-2.5 rounded-xl bg-gradient-to-r from-pink-600 to-indigo-600 text-white text-xs font-semibold shadow hover:opacity-95 transition">
+                            สนใจลงโฆษณา
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- ==================================================== -->
+        <!-- ⭐️ 2. แกนกลาง: เครื่องมือดาวน์โหลดวิดีโอ (Main Downloader) ⭐️ -->
+        <!-- ==================================================== -->
+        <main class="flex-1 max-w-3xl w-full space-y-6">
+
+            <!-- Card กรอกลิงก์ -->
+            <div class="glass-card rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6">
+                <div class="text-center space-y-2">
+                    <h2 class="text-2xl sm:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-100 to-pink-300">
+                        วางลิงก์เพื่อดาวน์โหลด
+                    </h2>
+                    <p class="text-xs sm:text-sm text-slate-400">
+                        รองรับทั้ง YouTube, TikTok, Facebook, IG, X, และเว็บสตรีมมิ่งกว่า 1,000+ แห่ง
+                    </p>
+                </div>
+
+                <!-- ช่องกรอก URL -->
+                <div class="space-y-2">
+                    <div class="relative flex items-center">
+                        <input 
+                            type="text" 
+                            id="videoUrl" 
+                            placeholder="วางลิงก์วิดีโอที่นี่ (YouTube, TikTok, Facebook, IG...)" 
+                            class="glass-input w-full pl-5 pr-28 py-4 sm:py-5 rounded-2xl text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-pink-500 text-sm sm:text-base transition-all shadow-inner"
+                            autocomplete="off"
+                        >
+                        <div class="absolute right-2.5 flex items-center gap-1.5">
+                            <button 
+                                id="pasteBtn" 
+                                type="button" 
+                                onclick="pasteClipboard()" 
+                                title="วางจากคลิปบอร์ด"
+                                class="px-3.5 py-2.5 rounded-xl bg-pink-600 hover:bg-pink-500 text-xs font-semibold text-white transition flex items-center gap-1.5 shadow"
+                            >
+                                <i class="fa-regular fa-paste"></i>
+                                <span class="hidden sm:inline">วางลิงก์</span>
+                            </button>
+                            <button 
+                                id="clearBtn" 
+                                type="button" 
+                                onclick="clearInput()" 
+                                title="ล้างข้อความ"
+                                class="p-2.5 w-9 h-9 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs text-slate-400 hover:text-slate-200 transition hidden items-center justify-center"
+                            >
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- เมนูเลือกความละเอียด / ฟอร์แมต -->
+                <div class="space-y-2.5">
+                    <div class="text-xs font-semibold text-slate-400 uppercase tracking-wider flex items-center gap-2">
+                        <i class="fa-solid fa-sliders text-pink-400"></i>
+                        <span>เลือกความละเอียดที่ต้องการ</span>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-5 gap-2" id="qualitySelector">
+                        <button type="button" data-val="best" class="quality-btn active px-3 py-3 rounded-2xl border border-pink-500/80 bg-pink-600/30 text-pink-200 text-xs font-medium flex flex-col items-center justify-center gap-1 transition">
+                            <i class="fa-solid fa-sparkles text-amber-300"></i>
+                            <span>ชัดสุด (Best)</span>
+                        </button>
+                        <button type="button" data-val="1080" class="quality-btn px-3 py-3 rounded-2xl border border-slate-700/80 bg-slate-800/60 hover:bg-slate-800 text-slate-300 text-xs font-medium flex flex-col items-center justify-center gap-1 transition">
+                            <i class="fa-solid fa-tv text-cyan-400"></i>
+                            <span>1080p FHD</span>
+                        </button>
+                        <button type="button" data-val="720" class="quality-btn px-3 py-3 rounded-2xl border border-slate-700/80 bg-slate-800/60 hover:bg-slate-800 text-slate-300 text-xs font-medium flex flex-col items-center justify-center gap-1 transition">
+                            <i class="fa-solid fa-mobile-screen text-emerald-400"></i>
+                            <span>720p HD</span>
+                        </button>
+                        <button type="button" data-val="480" class="quality-btn px-3 py-3 rounded-2xl border border-slate-700/80 bg-slate-800/60 hover:bg-slate-800 text-slate-300 text-xs font-medium flex flex-col items-center justify-center gap-1 transition">
+                            <i class="fa-solid fa-hard-drive text-orange-400"></i>
+                            <span>480p SD</span>
+                        </button>
+                        <button type="button" data-val="mp3" class="quality-btn px-3 py-3 rounded-2xl border border-slate-700/80 bg-slate-800/60 hover:bg-slate-800 text-slate-300 text-xs font-medium flex flex-col items-center justify-center gap-1 transition">
+                            <i class="fa-solid fa-music text-pink-400"></i>
+                            <span>MP3 (เสียง)</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- ปุ่มเริ่มดาวน์โหลด -->
+                <div>
+                    <button 
+                        id="downloadBtn" 
+                        onclick="handleStartDownload()" 
+                        class="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 hover:from-pink-500 hover:to-indigo-500 text-white font-bold text-base sm:text-lg shadow-xl shadow-pink-600/30 flex items-center justify-center gap-3 transition-all transform active:scale-[0.99] disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                        <i class="fa-solid fa-download"></i>
+                        <span>ดาวน์โหลดทันที</span>
+                    </button>
+                </div>
+
+                <!-- แพลตฟอร์มที่รองรับ -->
+                <div class="pt-3 border-t border-slate-800 flex flex-wrap items-center justify-center gap-4 text-xs text-slate-400">
+                    <span class="flex items-center gap-1.5"><i class="fa-brands fa-youtube text-red-500"></i> YouTube</span>
+                    <span class="flex items-center gap-1.5"><i class="fa-brands fa-tiktok text-teal-400"></i> TikTok ไร้ลายน้ำ</span>
+                    <span class="flex items-center gap-1.5"><i class="fa-brands fa-facebook text-blue-500"></i> Facebook</span>
+                    <span class="flex items-center gap-1.5"><i class="fa-brands fa-instagram text-pink-500"></i> Instagram</span>
+                    <span class="flex items-center gap-1.5"><i class="fa-brands fa-x-twitter text-white"></i> X (Twitter)</span>
+                    <span class="flex items-center gap-1.5"><i class="fa-solid fa-play text-amber-400"></i> Vidmonstr & อื่นๆ</span>
+                </div>
+            </div>
+
+            <!-- กล่องแสดงสถานะและ Progress Bar (เปิดเมื่อกดดาวน์โหลด) -->
+            <div id="progressCard" class="glass-card rounded-3xl p-6 shadow-2xl space-y-5 hidden transition-all">
+                <div class="flex items-start justify-between gap-4">
+                    <div class="flex items-center gap-3">
+                        <div id="statusIcon" class="w-12 h-12 rounded-2xl bg-pink-500/20 text-pink-400 flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-spinner fa-spin"></i>
+                        </div>
+                        <div>
+                            <div id="statusText" class="text-sm sm:text-base font-bold text-slate-100">กำลังเริ่มต้น...</div>
+                            <div id="videoTitle" class="text-xs text-slate-400 line-clamp-1 max-w-md">กำลังค้นหาไฟล์วิดีโอ...</div>
+                        </div>
+                    </div>
+                    <div id="percentText" class="text-2xl sm:text-3xl font-bold text-pink-400">0%</div>
+                </div>
+
+                <!-- หลอด Progress Bar -->
+                <div class="w-full bg-slate-900 rounded-full h-3.5 overflow-hidden p-0.5 border border-slate-800">
+                    <div id="progressBar" class="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 h-full rounded-full w-0 transition-all duration-300 progress-glow"></div>
+                </div>
+
+                <!-- สถิติ (ความเร็ว, เวลาที่เหลือ, ขนาด) -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 text-xs text-slate-400 bg-slate-950/60 p-3 rounded-2xl border border-slate-800/80">
+                    <div>
+                        <span class="block text-slate-500">ความเร็ว</span>
+                        <span id="speedVal" class="font-semibold text-slate-200">-- MB/s</span>
+                    </div>
+                    <div>
+                        <span class="block text-slate-500">เวลาที่เหลือ</span>
+                        <span id="etaVal" class="font-semibold text-slate-200">--</span>
+                    </div>
+                    <div>
+                        <span class="block text-slate-500">ดาวน์โหลดแล้ว</span>
+                        <span id="downloadedVal" class="font-semibold text-slate-200">0 B</span>
+                    </div>
+                    <div>
+                        <span class="block text-slate-500">ขนาดทั้งหมด</span>
+                        <span id="totalVal" class="font-semibold text-slate-200">--</span>
+                    </div>
+                </div>
+
+                <!-- ปุ่มเมื่อดาวน์โหลดเสร็จสมบูรณ์ -->
+                <div id="completedActions" class="hidden pt-2 flex flex-wrap gap-3">
+                    <a id="browserDownloadBtn" href="#" download class="flex-1 py-3.5 px-6 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-sm flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/30 transition transform active:scale-95">
+                        <i class="fa-solid fa-circle-down text-lg"></i>
+                        <span>บันทึกลงอุปกรณ์ของคุณ (คลิกที่นี่)</span>
+                    </a>
+                </div>
+
+                <!-- กล่องแจ้งเตือนข้อผิดพลาด -->
+                <div id="errorAlert" class="hidden p-4 rounded-2xl bg-red-950/70 border border-red-800 text-red-300 text-xs flex items-start gap-3">
+                    <i class="fa-solid fa-circle-exclamation text-base mt-0.5"></i>
+                    <div id="errorMsg">เกิดข้อผิดพลาดในการดาวน์โหลด</div>
+                </div>
+            </div>
+
+            <!-- In-Content Banner (โฆษณาคั่นเนื้อหา) -->
+            <div class="ad-box rounded-2xl p-3 text-center transition">
+                <div class="flex items-center justify-between text-[10px] text-slate-400 mb-1 px-1">
+                    <span><i class="fa-solid fa-ad text-pink-400 mr-1"></i>พื้นที่โฆษณา</span>
+                    <span class="text-slate-500">Native In-Content Banner</span>
+                </div>
+                <div class="py-4 px-6 rounded-xl bg-slate-900/60 border border-slate-800 flex items-center justify-between gap-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-purple-600/20 text-purple-400 flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div class="text-left">
+                            <div class="text-sm font-bold text-white">VPN ความเร็วสูง ไม่จำกัดความเร็ว</div>
+                            <div class="text-xs text-slate-400">ปลอดภัย ปลดล็อกทุกเว็บไซต์ในคลิกเดียว</div>
+                        </div>
+                    </div>
+                    <button class="px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-semibold transition shrink-0">
+                        ดูข้อเสนอ
+                    </button>
+                </div>
+            </div>
+
+            <!-- รายการที่เคยดาวน์โหลดล่าสุด -->
+            <div class="glass-card rounded-3xl p-6 shadow-2xl space-y-4">
+                <div class="flex items-center justify-between">
+                    <h3 class="text-sm sm:text-base font-bold text-slate-200 flex items-center gap-2">
+                        <i class="fa-solid fa-clock-rotate-left text-pink-400"></i>
+                        ประวัติดาวน์โหลดล่าสุดบนเซิร์ฟเวอร์
+                    </h3>
+                    <button onclick="loadDownloads()" class="text-xs text-slate-400 hover:text-pink-300 transition flex items-center gap-1">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                        <span>รีเฟรช</span>
+                    </button>
+                </div>
+
+                <div id="downloadsList" class="space-y-2 max-h-60 overflow-y-auto pr-1">
+                    <div class="text-center py-6 text-xs text-slate-500">
+                        <i class="fa-regular fa-folder-open text-2xl mb-2 block"></i>
+                        ยังไม่มีประวัติดาวน์โหลด
+                    </div>
+                </div>
+            </div>
+
+            <!-- คำแนะนำการใช้งาน 3 ขั้นตอน -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+                <div class="glass-card p-4 rounded-2xl text-center space-y-2 border border-slate-800">
+                    <div class="w-10 h-10 mx-auto rounded-xl bg-pink-500/20 text-pink-400 flex items-center justify-center font-bold">1</div>
+                    <div class="text-xs font-bold text-slate-200">ก๊อปปี้ลิงก์</div>
+                    <div class="text-[11px] text-slate-400">คัดลอกลิงก์วิดีโอจาก YouTube, TikTok หรือเว็บใดก็ได้</div>
+                </div>
+                <div class="glass-card p-4 rounded-2xl text-center space-y-2 border border-slate-800">
+                    <div class="w-10 h-10 mx-auto rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold">2</div>
+                    <div class="text-xs font-bold text-slate-200">วางลิงก์ & เลือกความชัด</div>
+                    <div class="text-[11px] text-slate-400">วางในช่องด้านบน แล้วเลือกความชัดที่ต้องการ (MP4 หรือ MP3)</div>
+                </div>
+                <div class="glass-card p-4 rounded-2xl text-center space-y-2 border border-slate-800">
+                    <div class="w-10 h-10 mx-auto rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold">3</div>
+                    <div class="text-xs font-bold text-slate-200">รับไฟล์ทันที</div>
+                    <div class="text-[11px] text-slate-400">ระบบจะดึงไฟล์และส่งตรงเข้าเครื่องหรือมือถือของคุณทันที</div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- ==================================================== -->
+        <!-- ⭐️ 3. ป้ายโฆษณาฝั่งขวา (Right Sidebar Ad - Skyscraper) ⭐️ -->
+        <!-- ==================================================== -->
+        <aside class="hidden xl:block w-[180px] 2xl:w-[240px] shrink-0 sticky top-20 space-y-4">
+            <div class="ad-box rounded-3xl p-4 shadow-xl transition space-y-3">
+                <div class="flex items-center justify-between text-[11px] text-slate-400">
+                    <span><i class="fa-solid fa-bullhorn text-pink-400 mr-1"></i>โฆษณา</span>
+                    <span class="text-[10px] text-slate-500">300x600</span>
+                </div>
+
+                <!-- ป้ายโฆษณาตัวอย่างฝั่งขวา -->
+                <div class="min-h-[500px] rounded-2xl bg-gradient-to-b from-indigo-950/70 via-slate-900/80 to-purple-950/70 border border-indigo-500/20 p-4 flex flex-col items-center justify-between text-center group cursor-pointer">
+                    <div class="space-y-2 pt-4">
+                        <div class="w-14 h-14 mx-auto rounded-2xl bg-gradient-to-tr from-indigo-500 to-purple-600 flex items-center justify-center text-white text-2xl shadow-lg shadow-indigo-500/30">
+                            <i class="fa-solid fa-gamepad"></i>
+                        </div>
+                        <div class="text-sm font-bold text-white pt-2 group-hover:text-indigo-300 transition">
+                            พื้นที่โฆษณาฝั่งขวา
+                        </div>
+                        <div class="text-xs text-slate-400 leading-relaxed">
+                            รองรับป้ายแบนเนอร์แนวตั้งมาตรฐาน ช่วยสร้างรายได้เมื่อคนเข้ามาโหลด
+                        </div>
+                    </div>
+
+                    <div class="w-full space-y-3 pb-4">
+                        <div class="p-3 rounded-xl bg-slate-950/60 border border-slate-800 text-[11px] text-slate-400">
+                            ตำแหน่งเด่น สบายตา มองเห็นได้ตลอดการใช้งาน
+                        </div>
+                        <button class="w-full py-2.5 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-xs font-semibold shadow hover:opacity-95 transition">
+                            ติดต่อลงโฆษณา
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-auto border-t border-slate-800/80 py-6 text-center text-xs text-slate-500 space-y-1">
+        <div>🌸 Ibuki Download &bull; เว็บดาวน์โหลดวิดีโอฟรีสำหรับทุกคน</div>
+        <div class="text-[11px] text-slate-600">มีระบบป้ายโฆษณาพร้อมรองรับ Google AdSense และแบนเนอร์สปอนเซอร์</div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-slate-900 border border-slate-700 px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 text-sm text-slate-200">
+        <i id="toastIcon" class="fa-solid fa-circle-check text-emerald-400"></i>
+        <span id="toastMsg">ข้อความ</span>
+    </div>
+
+    <script>
+        let selectedQuality = 'best';
+        let currentTaskId = null;
+        let progressInterval = null;
+        let currentFinishedFilename = null;
+
+        // Quality buttons
+        document.querySelectorAll('.quality-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.quality-btn').forEach(b => {
+                    b.classList.remove('active', 'border-pink-500/80', 'bg-pink-600/30', 'text-pink-200');
+                    b.classList.add('border-slate-700/80', 'bg-slate-800/60', 'text-slate-300');
+                });
+                btn.classList.add('active', 'border-pink-500/80', 'bg-pink-600/30', 'text-pink-200');
+                btn.classList.remove('border-slate-700/80', 'bg-slate-800/60', 'text-slate-300');
+                selectedQuality = btn.getAttribute('data-val');
+            });
+        });
+
+        // Input clear button toggle
+        const videoUrlInput = document.getElementById('videoUrl');
+        const clearBtn = document.getElementById('clearBtn');
+        videoUrlInput.addEventListener('input', () => {
+            if (videoUrlInput.value.trim().length > 0) {
+                clearBtn.classList.remove('hidden');
+                clearBtn.classList.add('flex');
+            } else {
+                clearBtn.classList.add('hidden');
+                clearBtn.classList.remove('flex');
+            }
+        });
+
+        videoUrlInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                handleStartDownload();
+            }
+        });
+
+        function clearInput() {
+            videoUrlInput.value = '';
+            clearBtn.classList.add('hidden');
+            clearBtn.classList.remove('flex');
+            videoUrlInput.focus();
+        }
+
+        async function pasteClipboard() {
+            try {
+                const text = await navigator.clipboard.readText();
+                if (text) {
+                    videoUrlInput.value = text.trim();
+                    clearBtn.classList.remove('hidden');
+                    clearBtn.classList.add('flex');
+                    showToast('วางลิงก์เรียบร้อยแล้ว');
+                }
+            } catch (err) {
+                showToast('กรุณากด Ctrl+V เพื่อวางลิงก์', 'info');
+            }
+        }
+
+        function showToast(msg, type = 'success') {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toastMsg');
+            const toastIcon = document.getElementById('toastIcon');
+
+            toastMsg.innerText = msg;
+            if (type === 'error') {
+                toastIcon.className = 'fa-solid fa-circle-exclamation text-red-400';
+            } else if (type === 'info') {
+                toastIcon.className = 'fa-solid fa-circle-info text-blue-400';
+            } else {
+                toastIcon.className = 'fa-solid fa-circle-check text-emerald-400';
+            }
+
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            setTimeout(() => {
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3000);
+        }
+
+        async function handleStartDownload() {
+            const url = videoUrlInput.value.trim();
+            if (!url) {
+                showToast('กรุณาวางลิงก์วิดีโอ', 'error');
+                videoUrlInput.focus();
+                return;
+            }
+
+            const downloadBtn = document.getElementById('downloadBtn');
+            downloadBtn.disabled = true;
+            downloadBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i><span>กำลังดึงข้อมูล...</span>';
+
+            const progressCard = document.getElementById('progressCard');
+            progressCard.classList.remove('hidden');
+            document.getElementById('errorAlert').classList.add('hidden');
+            document.getElementById('completedActions').classList.add('hidden');
+            document.getElementById('progressBar').style.width = '0%';
+            document.getElementById('percentText').innerText = '0%';
+            document.getElementById('statusText').innerText = 'กำลังเริ่มดาวน์โหลด...';
+            document.getElementById('videoTitle').innerText = url;
+            document.getElementById('speedVal').innerText = '-- MB/s';
+            document.getElementById('etaVal').innerText = '--';
+            document.getElementById('downloadedVal').innerText = '0 B';
+            document.getElementById('totalVal').innerText = '--';
+            document.getElementById('statusIcon').innerHTML = '<i class="fa-solid fa-spinner fa-spin text-pink-400"></i>';
+
+            // Auto scroll to progress card
+            progressCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+            try {
+                const res = await fetch('/api/download', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ url: url, quality: selectedQuality })
+                });
+                const data = await res.json();
+                if (!data.success) {
+                    showError(data.error || 'เกิดข้อผิดพลาด');
+                    downloadBtn.disabled = false;
+                    downloadBtn.innerHTML = '<i class="fa-solid fa-download"></i><span>ดาวน์โหลดทันที</span>';
+                    return;
+                }
+
+                currentTaskId = data.task_id;
+                startPollingProgress(currentTaskId);
+            } catch (err) {
+                showError('ไม่สามารถเชื่อมต่อเซิร์ฟเวอร์ได้: ' + err.message);
+                downloadBtn.disabled = false;
+                downloadBtn.innerHTML = '<i class="fa-solid fa-download"></i><span>ดาวน์โหลดทันที</span>';
+            }
+        }
+
+        function startPollingProgress(taskId) {
+            if (progressInterval) clearInterval(progressInterval);
+
+            progressInterval = setInterval(async () => {
+                try {
+                    const res = await fetch(`/api/progress/${taskId}`);
+                    const data = await res.json();
+                    if (!data.success) return;
+
+                    const t = data.task;
+                    document.getElementById('progressBar').style.width = `${t.percent}%`;
+                    document.getElementById('percentText').innerText = `${t.percent}%`;
+                    document.getElementById('speedVal').innerText = t.speed;
+                    document.getElementById('etaVal').innerText = t.eta;
+                    document.getElementById('downloadedVal').innerText = t.downloaded;
+                    document.getElementById('totalVal').innerText = t.total;
+                    if (t.title) document.getElementById('videoTitle').innerText = t.title;
+
+                    if (t.status === 'downloading') {
+                        document.getElementById('statusText').innerText = 'กำลังดาวน์โหลดข้อมูล...';
+                        document.getElementById('statusIcon').innerHTML = '<i class="fa-solid fa-arrow-down animate-bounce text-pink-400"></i>';
+                    } else if (t.status === 'processing') {
+                        document.getElementById('statusText').innerText = 'กำลังประมวลผล / แปลงรูปแบบไฟล์...';
+                        document.getElementById('statusIcon').innerHTML = '<i class="fa-solid fa-gear fa-spin text-amber-400"></i>';
+                    } else if (t.status === 'finished') {
+                        clearInterval(progressInterval);
+                        onDownloadFinished(t);
+                    } else if (t.status === 'error') {
+                        clearInterval(progressInterval);
+                        showError(t.error || 'เกิดข้อผิดพลาดระหว่างดาวน์โหลด');
+                        resetDownloadBtn();
+                    }
+                } catch (err) {
+                    console.error("Polling error", err);
+                }
+            }, 800);
+        }
+
+        function onDownloadFinished(task) {
+            currentFinishedFilename = task.filename;
+            document.getElementById('statusText').innerText = 'ดาวน์โหลดเสร็จสมบูรณ์! 🎉';
+            document.getElementById('statusIcon').innerHTML = '<i class="fa-solid fa-check text-emerald-400"></i>';
+            document.getElementById('completedActions').classList.remove('hidden');
+
+            if (task.filename) {
+                const downloadLink = `/download-file/${encodeURIComponent(task.filename)}`;
+                const btn = document.getElementById('browserDownloadBtn');
+                btn.href = downloadLink;
+                
+                // Trigger auto download in browser!
+                const a = document.createElement('a');
+                a.href = downloadLink;
+                a.download = task.filename;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            }
+
+            resetDownloadBtn();
+            showToast('ดาวน์โหลดเสร็จสมบูรณ์แล้ว!');
+            loadDownloads();
+        }
+
+        function showError(msg) {
+            document.getElementById('statusText').innerText = 'ล้มเหลว';
+            document.getElementById('statusIcon').innerHTML = '<i class="fa-solid fa-circle-xmark text-red-400"></i>';
+            const alert = document.getElementById('errorAlert');
+            alert.classList.remove('hidden');
+            document.getElementById('errorMsg').innerText = msg;
+        }
+
+        function resetDownloadBtn() {
+            const downloadBtn = document.getElementById('downloadBtn');
+            downloadBtn.disabled = false;
+            downloadBtn.innerHTML = '<i class="fa-solid fa-download"></i><span>ดาวน์โหลดทันที</span>';
+        }
+
+        async function loadDownloads() {
+            try {
+                const res = await fetch('/api/downloads');
+                const data = await res.json();
+                if (!data.success) return;
+
+                const list = document.getElementById('downloadsList');
+                if (!data.files || data.files.length === 0) {
+                    list.innerHTML = `
+                        <div class="text-center py-6 text-xs text-slate-500">
+                            <i class="fa-regular fa-folder-open text-2xl mb-2 block"></i>
+                            ยังไม่มีประวัติดาวน์โหลด
+                        </div>
+                    `;
+                    return;
+                }
+
+                list.innerHTML = data.files.map(f => {
+                    const isAudio = f.name.endsWith('.mp3');
+                    const icon = isAudio ? 'fa-music text-pink-400' : 'fa-film text-purple-400';
+                    return `
+                        <div class="flex items-center justify-between p-3 rounded-2xl bg-slate-900/60 hover:bg-slate-800/80 border border-slate-800 transition">
+                            <div class="flex items-center gap-3 overflow-hidden flex-1 mr-3">
+                                <div class="w-9 h-9 rounded-xl bg-slate-800 flex items-center justify-center text-sm shrink-0">
+                                    <i class="fa-solid ${icon}"></i>
+                                </div>
+                                <div class="overflow-hidden">
+                                    <div class="text-xs font-semibold text-slate-200 truncate">
+                                        ${f.name}
+                                    </div>
+                                    <div class="text-[10px] text-slate-500 mt-0.5">
+                                        ${f.size} &bull; ${f.modified}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-1.5 shrink-0">
+                                <a href="/download-file/${encodeURIComponent(f.name)}" download title="ดาวน์โหลดลงเครื่อง" class="p-2.5 rounded-xl bg-pink-600/20 hover:bg-pink-600 text-pink-300 hover:text-white text-xs transition flex items-center gap-1">
+                                    <i class="fa-solid fa-download"></i>
+                                    <span class="hidden sm:inline">โหลด</span>
+                                </a>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+            } catch (err) {
+                console.error("Failed to load downloads", err);
+            }
+        }
+
+        loadDownloads();
+    </script>
+</body>
+</html>
